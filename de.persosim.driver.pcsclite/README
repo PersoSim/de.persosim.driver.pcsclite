@@ -1,0 +1,23 @@
+PersoSim - Der Open Source Simulator für den elektronischen Personalausweis
+
+Stand: 01.02.2018
+
+
+*Systemvorraussetzungen*
+Linux (z.B. Debian Stretch)
+Benötigt werden zusätzlich zur Standardinstallation die folgenden Pakete (und deren Abhängigkeiten)
+pcscd
+pcsc-tools
+libpcsclite-dev
+
+oder 
+MacOS (z.B. 10.13)
+Benötigt werden zusätzlich zur Standardinstallation die folgenden Pakete
+XCode
+XCode command line tools
+
+
+*Installation*
+Das Treiberpaket liegt im Moment lediglich im Quellcode vor und kann mit der weit verbreiteten Kommandokombination "make && make install" kompiliert und installiert werden.
+
+Solange kein Simulator läuft, meldet der Treiber "Keine Karte im Leser". Sobald ein Simulator am konfigurierten Port verfügbar ist, ist dieser über den Treiber nutzbar. 
