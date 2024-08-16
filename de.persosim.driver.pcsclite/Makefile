@@ -57,7 +57,7 @@ install_LINUX: $(LIBNAME)
 
 install_OSX: $(LIBNAME)
 	sudo cp MacOSX/reader.conf /etc/reader.conf
-	mkdir -p /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS
+	sudo mkdir -p /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS
 	sudo cp $(LIBNAME) /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS
 	sudo cp MacOSX/Info.plist /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/Info.plist
 
