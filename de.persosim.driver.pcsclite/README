@@ -1,17 +1,19 @@
 PersoSim - Der Open Source Simulator für den elektronischen Personalausweis
 
-Stand: 01.02.2018
+Stand: 28.08.2024
 
 
 *Systemvorraussetzungen*
-Linux (z.B. Debian Stretch)
+Linux (z.B. Debian)
 Benötigt werden zusätzlich zur Standardinstallation die folgenden Pakete (und deren Abhängigkeiten)
 pcscd
 pcsc-tools
 libpcsclite-dev
+Optional: pcsc_scan
 
-oder 
-MacOS (getestet mit 10.13, der Treiber sollte grundsätzlich ab MacOS 10.11 funktionieren)
+oder
+
+MacOS (der Treiber sollte grundsätzlich ab MacOS 10.11 funktionieren)
 Benötigt werden zusätzlich zur Standardinstallation die folgenden Pakete
 XCode
 XCode command line tools
