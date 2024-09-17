@@ -56,7 +56,6 @@ install_LINUX: $(LIBNAME)
 	sudo cp $(LIBNAME) /usr/lib/pcsc/drivers/serial/
 
 install_OSX: $(LIBNAME)
-	sudo [ -f /etc/reader.conf ] && cp /etc/reader.conf /etc/reader.conf.bak
 	sudo cp MacOSX/reader.conf /etc/reader.conf
 	sudo mkdir -p /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS
 	sudo cp $(LIBNAME) /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS
@@ -66,7 +65,6 @@ uninstall: uninstall_$(OS)
 
 uninstall_OSX:
 	sudo rm -f /etc/reader.conf
-	sudo [ -f /etc/reader.conf.bak ] && cp /etc/reader.conf.bak /etc/reader.conf
 	sudo rm -f /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/MacOS/$(LIBNAME)
 	sudo rm -f /usr/local/libexec/SmartCardServices/drivers/$(DRIVERNAME).bundle/Contents/Info.plist
 	
